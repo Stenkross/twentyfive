@@ -1,0 +1,45 @@
+
+@media screen and (max-width: 600px) {
+#wrapper_p1{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30vh 10vh 20vh 20vh 20vh 10vh;
+    grid-template-areas: 
+    'hd hd hd'
+    'b1 b1 b1'
+    '.. s1 s1'
+    'b2 b2 b2'
+    's2 s2 ..'
+    'ft ft ft';
+}
+header {
+    grid-area: hd;
+    background-color: red;
+}
+
+footer {
+    grid-area: ft;
+    background-color: black;
+}
+
+#sc1 {
+    grid-area: s1;
+    background-color: purple;
+}
+
+#sc2 {
+    grid-area: s2;
+    background-color: green;
+}
+
+#bild1 {
+    grid-area: b1;
+    background-color: yellow;
+}
+
+#bild2 {
+    grid-area: b2;
+    background-color: orange;
+}
+}
