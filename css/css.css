@@ -1,45 +1,77 @@
+/* Gemensam kod */
+
+body{
+    margin: 0px;
+    background-color: #f9fbe7;
+}   
+
+/* Start på fösta sidan dator */
+
+
+
+/* Start på fösta sidan mobil */
 
 @media screen and (max-width: 600px) {
 #wrapper_p1{
     display: grid;
-    height: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30vh 10vh 20vh 20vh 20vh 10vh;
+    grid-template-rows: 10vh 40vh 20vh 20vh 40vh 30vh 10vh;
     grid-template-areas: 
     'hd hd hd'
     'b1 b1 b1'
-    '.. s1 s1'
+    's1 s1 s1'
+    '.. .. ..'
     'b2 b2 b2'
     's2 s2 ..'
     'ft ft ft';
+    margin: 0 0px;
 }
+
 header {
     grid-area: hd;
-    background-color: red;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    background-color:#AAAE7F;
 }
 
 footer {
     grid-area: ft;
-    background-color: black;
+    background-color: #4CAF50;
 }
 
 #sc1 {
     grid-area: s1;
-    background-color: purple;
+    background-color: #D0D6B3;
+    padding-left: 20px;
 }
 
 #sc2 {
     grid-area: s2;
-    background-color: green;
+    background-color: #f9fbe7;
+    padding-left: 20px;
 }
 
 #bild1 {
     grid-area: b1;
-    background-color: yellow;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+  
+#bild1 img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 #bild2 {
     grid-area: b2;
-    background-color: orange;
+    background-image: ;
 }
 }
