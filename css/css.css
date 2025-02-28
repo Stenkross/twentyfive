@@ -2,7 +2,7 @@
 
 body{
     margin: 0px;
-    background-color: #f9fbe7;
+    background-color: #efefef;
 }   
 
 /* Start på fösta sidan dator */
@@ -15,7 +15,7 @@ body{
 #wrapper_p1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 40vh 20vh 20vh 40vh 30vh 10vh;
+    grid-template-rows: 10vh auto 15vh 20vh 40vh 30vh 10vh;
     grid-template-areas: 
     'hd hd hd'
     'b1 b1 b1'
@@ -42,7 +42,7 @@ header {
 
 footer {
     grid-area: ft;
-    background-color: #4CAF50;
+    background-color: #AAAE7F;
 }
 
 #sc1 {
@@ -53,7 +53,7 @@ footer {
 
 #sc2 {
     grid-area: s2;
-    background-color: #f9fbe7;
+    background-color: #efefef;
     padding-left: 20px;
 }
 
@@ -72,6 +72,13 @@ footer {
 
 #bild2 {
     grid-area: b2;
-    background-image: ;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+  
+#bild2 img {
+    width: 100%;
+    height: auto;   
 }
 }
