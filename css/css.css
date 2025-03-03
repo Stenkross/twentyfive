@@ -9,8 +9,14 @@ body{
 /* Gemensam header kod */
 
 h1{
-    font-size: 1rem;
-    margin-left: -10px;
+    font-size: 1.5rem;
+    font-family: Amatic SC;
+    left: 5px;
+    position: absolute;
+}
+
+h1 .kompassen {
+    color: #5C5C5C  ;
 }
 
 nav {
@@ -30,7 +36,6 @@ nav a{
     display: inline-block;
     cursor: pointer;
     right: 10px;
-    top: 0px;
     position: absolute;
     padding: 10px;
     z-index: 10;
@@ -59,7 +64,7 @@ nav a{
 .menu{
     height: 100vh;
     width: 40vw;
-    background: #58B09C;
+    background: #AAAE7F;
     position: fixed;
     top: 0;
     right: -90vw;
@@ -91,16 +96,8 @@ nav a{
 }
 
 
-#img-logga img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-}
-
 #img-logga {
-    display: block;
-    margin-right: auto;
+    width: 20%;
 }
 
 
@@ -128,14 +125,14 @@ nav a{
 
 header {
     grid-area: hd;
-    justify-content: space-between;
-    align-items: center;
     position: sticky;
     z-index: 2;
     top: 0;
     gap: 20px;
     padding: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:#AAAE7F;
 }
 
