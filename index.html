@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/css.css"> 
-  <title>Document</title>
+  <title>Utflyktskompassen</title>
+   <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@400;700&family=Creepster&family=Delius+Swash+Caps&family=Irish+Grover&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <!-- Ikoner -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!--Nästa font, Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Creepster&family=Delius+Swash+Caps&family=Irish+Grover&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@400;700&family=Creepster&family=Delius+Swash+Caps&family=Irish+Grover&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@400;700&family=Creepster&family=Delius+Swash+Caps&family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
 </head>
 <body>
   
   <div id="wrapper_p1">
   
     <header>
+      
       <h1>Utflykts<span class="kompassen">kompassen</span></h1>
       <div class="container" onclick="transform(this)">
         <div class="bar1"></div>
@@ -27,24 +32,27 @@
       <div class="fade-layer"></div>
 
       <nav id="menu" class="menu">
-        <ul>
-          <a href="index.html">Hem</a>
-          <a href="Utflykter.html">Utflykter</a>
-          <a href="Forum.html">Förslag</a>
-          <a href="#">Kontakt</a>
-        </ul>
+        <a href="index.html" class="active"><i class="fas fa-home" ></i> Hem</a>
+        <a href="Utflykter.html"><i class="fas fa-map-marked-alt"></i> Utflykter</a>
+        <a href="Forum.html"><i class="fas fa-comments"></i> Förslag</a>
       </nav>
 
       <img id="img-logga" src="img/Logga.png" alt="">
 
     </header>
 
+    
     <div id="img1">
-      <img src="img/Första_bild.jpg" alt=""> <!--Behöver en avlång bild-->
+      <img src="img/Adobe Express - file (1).jpg" alt=""> 
     </div>
   
       <div id="sc1">
-        <p>hej</p>
+        <div class="parabel">
+          <p>hej</p>
+          <svg class="parabel-form" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#efefef" d="M0,160 Q720,300 1440,160 L1440,320 L0,320 Z"></path>
+          </svg>
+        </div>
       </div>
 
       <div id="img2">

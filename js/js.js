@@ -1,15 +1,21 @@
 function transform(x) {
     x.classList.toggle("change");
-    showMenu();
+    toggleMenu();
+}
+  
+function toggleMenu(){
+    let menu = document.querySelector("nav.menu");
+    let layer = document.querySelector(".fade-layer");
+
+    menu.classList.toggle("show");
+    layer.classList.toggle("visible");
 }
 
+document.addEventListener("click", function (event) {
+    let menu = document.querySelector("nav.menu");
+    let menuButton = document.querySelector(".container");
 
-document.querySelector(".fade-layer").addEventListener("click", showMenu)
-  
-function showMenu(){
-    let menu = document.querySelector("nav.menu")
-    menu.classList.toggle("show")
-  
-    let layer = document.querySelector(".fade-layer")
-    layer.classList.toggle("visible")
-}
+    if (menu.classList.contains("show") && !menu.contains(event.target) && !menuButton.contains(event.target)) {
+        transform(menuButton); 
+    }
+});
