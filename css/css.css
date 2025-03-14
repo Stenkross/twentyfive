@@ -20,6 +20,7 @@ h1{
 
 h1 .kompassen {
     color: #5C5C5C  ;
+    font-weight: bold;
 }
 
 nav {
@@ -107,6 +108,7 @@ nav a i {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 5;
     opacity: 0;
+    pointer-events: none;
     transition: opacity 0.4s ease, visibility 0s 0.4s; 
 }
 
@@ -124,7 +126,9 @@ nav a i {
 
 /* Start på fösta sidan dator */
 
+/* Start på andra sidan dator */
 
+/* Start på tredje sidan dator */
 
 /* Start på fösta sidan mobil */
 
@@ -132,7 +136,7 @@ nav a i {
 #wrapper_p1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh auto 25vh 20vh auto 30vh 10vh;
+    grid-template-rows: 10vh auto 30vh 10vh auto 30vh 10vh;
     grid-template-areas: 
     'hd hd hd'
     'b1 b1 b1'
@@ -142,10 +146,6 @@ nav a i {
     's2 s2 ..'
     'ft ft ft';
     margin: 0 0px;
-}
-
-.parabel{
-
 }
 
 header {
@@ -158,7 +158,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#AAAE7F;
+    background-color:#8F926E;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -169,19 +169,17 @@ footer {
 
 #sc1 {
     grid-area: s1;
-    background-color: #D0D6B3;
+    margin: 10px;
 }
 
 #sc2 {
     grid-area: s2;
-    background-color: #efefef;
-    padding-left: 20px;
+
 }
 
 #img1 {
     grid-area: b1;
     position: relative;
-    width: 100%;
     overflow: hidden;
 }
   
@@ -190,22 +188,21 @@ footer {
     height: auto;
     display: block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    filter: brightness(80%);
 }
 
 #img2 {
+    width: 90%;
     grid-area: b2;
-    position: relative;
-    width: 100%;
+
     overflow: hidden;
+
 }
   
 #img2 img {
-    width: 100%;
-    height: auto;   
+    border-radius: 10px;   
+    object-fit: contain;
 }
 }
-
 
 /* Start på andra sidan mobil */
 
@@ -213,23 +210,36 @@ footer {
     #wrapper_p2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh auto 15vh 20vh auto 30vh 10vh;
+        grid-template-rows: 10vh 10vh 30vh 10vh 30vh 10vh 30vh 10vh 10vh;
         grid-template-areas: 
         'hd hd hd'
-        'b1 b1 b1'
-        's1 s1 s1'
         '.. .. ..'
-        'b2 b2 b2'
-        's2 s2 ..'
+        'u1 u1 u1'
+        '.. .. ..'
+        'u2 u2 ..'
+        '.. .. ..'
+        '.. u3 u3'
+        '.. .. ..'
         'ft ft ft';
         margin: 0 0px;
     }
 
+    #sc1_u {
+        grid-area: u1;
+        background-color: #333;
+    }
+
+    #sc2_u {
+        grid-area: u2;
+        background-color: red;
+    }
+
+    #sc3_u {
+        grid-area: u3;
+        background-color: orange;
+    }
 
 }
-
-
-
 
 /* Start på sista sidan mobil */
 
@@ -240,13 +250,13 @@ footer {
         grid-template-rows: 10vh 100vh 10vh;
         grid-template-areas: 
         'hd hd hd'
-        's1 s1 s1'
+        'f1 f1 f1'
         'ft ft ft';
         margin: 0 0px;
     }
     
 #sc1_f {
-    grid-area: s1;
+    grid-area: f1;
     background-color: #D0D6B3;
     padding: 10px;
     padding-left: 20px;
@@ -255,5 +265,4 @@ footer {
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 }
