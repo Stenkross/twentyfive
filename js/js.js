@@ -19,7 +19,3 @@ document.addEventListener("click", function (event) {
         transform(menuButton); 
     }
 });
-
-function popupp() {
-    alert("Tack för bidragandet till hemsidan!");
-  }

@@ -9,6 +9,10 @@ p{
     font-family: Poppins;
 }
 
+h2 {
+    font-family: Poppins;
+}
+
 /* Gemensam header kod */
 
 h1{
@@ -250,24 +254,54 @@ nav a i {
     #wrapper_p3{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh 100vh 10vh;
+        grid-template-rows: 10vh 35vh 100vh 10vh;
         grid-template-areas: 
         'hd hd hd'
+        'sf sf sf'
         'f1 f1 f1'
         'ft ft ft';
         margin: 0 0px;
     }
     
     #sc1_f {
+        grid-area: sf;
+        margin-top: 30px;
+        margin: 15px;
+    }
+
+    #sc2_f {
         grid-area: f1;
         margin-top: 30px;
-        margin: 20px;
-        border-radius: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 15px;
+        font-family: Poppins;
     }
 
     #names  {
         display: flex;
         align-items: center;
     }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 20px; 
+        box-sizing: border-box;
+        font-family: Poppins;
+    }
+
+    form div{
+        padding-bottom: 10px ;
+    }
+
+    textarea{
+        border-radius: 10px; 
+        width: 100%;
+        padding: 10px;
+        font-family: Poppins;
+        box-sizing: border-box;
+        height: 50vh;
+        border: 1px solid;
+    }
+
 }
