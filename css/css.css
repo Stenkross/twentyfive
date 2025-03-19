@@ -73,6 +73,7 @@ nav a i {
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;  
+    border-radius: 20px; 
   }
   
 .change .bar1 {
@@ -175,6 +176,7 @@ nav a i {
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
+        border-top: #333 solid 1px;
     }
 
     #sc1 {
@@ -182,9 +184,17 @@ nav a i {
         margin: 10px;
     }
 
+    #sc1 p{
+        margin-top: -15px;
+    }
+
     #sc2 {
         grid-area: s2;
         margin: 15px;
+    }
+
+    #sc2 p{
+        margin-top: -15px;
     }
 
     #img1 {
@@ -218,16 +228,17 @@ nav a i {
     #wrapper_p2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh 10vh 30vh 10vh 30vh 10vh 30vh 10vh 10vh;
+        grid-template-rows: 10vh auto 30vh auto 30vh auto 30vh auto 30vh 10vh;
         grid-template-areas: 
         'hd hd hd'
-        '.. .. ..'
+        'c1 c1 c1'
         'u1 u1 u1'
-        '.. .. ..'
+        'c2 c2 c2'
         'u2 u2 ..'
-        '.. .. ..'
+        'c3 c3 c3'
         '.. u3 u3'
-        '.. .. ..'
+        'c4 c4 c4'
+        '.. u4 u4'
         'ft ft ft';
         margin: 0 0px;
     }
@@ -247,7 +258,26 @@ nav a i {
         background-color: orange;
     }
 
+    #sc4_u {
+        grid-area: u4;
+        background-color: orange;
+    }
 
+    #slideshow1{
+        grid-area: c1;
+    }
+
+    #slideshow2{
+        grid-area: c2;
+    }
+
+    #slideshow3{
+        grid-area: c3;
+    }
+
+    #slideshow4{
+        grid-area: c4;
+    }
 
     /* Start på tredje sidan mobil */
 
@@ -288,6 +318,7 @@ nav a i {
         border-radius: 20px; 
         box-sizing: border-box;
         font-family: Poppins;
+        background-color: white;
     }
 
     form div{
@@ -302,6 +333,30 @@ nav a i {
         box-sizing: border-box;
         height: 50vh;
         border: 1px solid;
+    }
+
+    #namn{
+        margin-right: 5px;
+    }
+
+    #efternamn{
+        margin-left: 5px;
+    }
+
+    #telefonnummer{
+        margin-bottom: 10px;
+    }
+    button {
+        background-color: #4CAF50; 
+        color: white; 
+        padding: 12px 20px; 
+        border: none;
+        border-radius: 20px; 
+        font-size: 15px;
+        font-weight: bold;
+        width: 200px;
+        display: block;
+        margin: 10px auto; 
     }
 
 }
