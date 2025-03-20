@@ -249,30 +249,35 @@ nav a i {
 
     #sc1_u {
         grid-area: u1;
-        background-color: #333;
+        
         margin: 15px;
     }
 
     #sc2_u {
         grid-area: u2;
-        background-color: red;
+        
         margin: 15px;
     }
 
     #sc3_u {
         grid-area: u3;
-        background-color: orange;
+        
         margin: 15px;
     }
 
     #sc4_u {
         grid-area: u4;
-        background-color: orange;
+        
         margin: 15px;
     }
 
     #slideshow1{
-        grid-area: c1;
+        grid-area: c1; 
+    }
+
+    #slideshow1 .slideshow_1 img{
+        width: 100%;
+        height: auto;
     }
 
     #slideshow2{
