@@ -13,6 +13,10 @@ h2 {
     font-family: Poppins;
 }
 
+ul {
+    font-family: Poppins;
+}
+
 /* Gemensam header kod */
 
 h1{
@@ -228,7 +232,7 @@ nav a i {
     #wrapper_p2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh auto 60vh auto 60vh auto 60vh auto 60vh 10vh;
+        grid-template-rows: 10vh auto 75vh auto 75vh auto 75vh auto 75vh 10vh;
         grid-template-areas: 
         'hd hd hd'
         'c1 c1 c1'
