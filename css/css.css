@@ -228,17 +228,17 @@ nav a i {
     #wrapper_p2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh auto 30vh auto 30vh auto 30vh auto 30vh 10vh;
+        grid-template-rows: 10vh auto 60vh auto 60vh auto 60vh auto 60vh 10vh;
         grid-template-areas: 
         'hd hd hd'
         'c1 c1 c1'
         'u1 u1 u1'
         'c2 c2 c2'
-        'u2 u2 ..'
+        'u2 u2 u2'
         'c3 c3 c3'
-        '.. u3 u3'
+        'u3 u3 u3'
         'c4 c4 c4'
-        '.. u4 u4'
+        'u4 u4 u4'
         'ft ft ft';
         margin: 0 0px;
     }
@@ -246,21 +246,25 @@ nav a i {
     #sc1_u {
         grid-area: u1;
         background-color: #333;
+        margin: 15px;
     }
 
     #sc2_u {
         grid-area: u2;
         background-color: red;
+        margin: 15px;
     }
 
     #sc3_u {
         grid-area: u3;
         background-color: orange;
+        margin: 15px;
     }
 
     #sc4_u {
         grid-area: u4;
         background-color: orange;
+        margin: 15px;
     }
 
     #slideshow1{
