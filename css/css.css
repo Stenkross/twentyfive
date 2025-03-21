@@ -232,7 +232,7 @@ nav a i {
     #wrapper_p2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh auto 75vh auto 75vh auto 75vh auto 75vh 10vh;
+        grid-template-rows: 10vh auto 75vh auto 75vh auto 75vh auto 80vh 10vh;
         grid-template-areas: 
         'hd hd hd'
         'c1 c1 c1'
@@ -248,48 +248,107 @@ nav a i {
     }
 
     #sc1_u {
-        grid-area: u1;
-        
+        grid-area: u1; 
         margin: 15px;
     }
 
     #sc2_u {
         grid-area: u2;
-        
         margin: 15px;
     }
 
     #sc3_u {
         grid-area: u3;
-        
         margin: 15px;
     }
 
     #sc4_u {
         grid-area: u4;
-        
         margin: 15px;
     }
 
     #slideshow1{
         grid-area: c1; 
+        position: relative;
     }
 
-    #slideshow1 .slideshow_1 img{
+    .slideshow_1 {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .slideshow_1 img {
         width: 100%;
         height: auto;
     }
 
     #slideshow2{
         grid-area: c2;
+        position: relative;
+    }
+    
+    .slideshow_2 {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .slideshow_2 img {
+        width: 100%;
+        height: auto;
     }
 
     #slideshow3{
         grid-area: c3;
+        position: relative;
+    }
+
+    .slideshow_3 {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .slideshow_3 img {
+        width: 100%;
+        height: auto;
     }
 
     #slideshow4{
         grid-area: c4;
+        position: relative;
+    }
+
+    .slideshow_4 {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .slideshow_4 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+    
+    .next {
+       right: 0;
+       border-radius: 3px 0 0 3px;
     }
 
     /* Start på tredje sidan mobil */
