@@ -17,6 +17,7 @@ ul {
     font-family: Poppins;
 }
 
+
 /* Gemensam header kod */
 
 .phone {
@@ -101,7 +102,7 @@ h1{
     #wrapper_1{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10vh 70vh 60vh auto 15vh;
+        grid-template-rows: 10vh 70vh 60vh auto 40vh;
         grid-template-areas: 
         'hd hd'
         'b1 b1'
@@ -120,9 +121,51 @@ h1{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-top: #333 solid 1px;
-        padding-top: 0px;
+        padding-top: 40px;
+        margin-top: 0px;
+        padding-bottom: 20px;
+        position: relative;
+        box-sizing: border-box; 
     }
+
+    footer h4 {
+        font-family: Poppins ;
+        font-size: larger;
+        text-decoration: underline;
+    }
+
+    #footer_text{
+        display: flex;
+        justify-content: space-between; 
+        width: 100%;
+        position: relative;
+    }
+
+    footer hr {
+        border-color: #333;
+        width: 80%; 
+    }
+
+    #footer_cont{
+        padding-right: 50px;
+        padding-left: 200px;
+    }
+
+    #footer_follow{
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;  
+    }
+    #footer_follow i{
+      font-size: 1.5rem; 
+    }
+
+    #footer_email{
+        padding-left: 50px;
+        padding-right: 100px;
+    }
+
+
 
     header {
         grid-area: hd;
@@ -190,7 +233,7 @@ h1{
         text-shadow: 1px 1px 2px rgb(0, 0, 0);
     }
 
-    #img2 {
+    #img3 {
         padding-left: 100px;
         grid-area: b2;
         overflow: hidden;
@@ -199,7 +242,7 @@ h1{
     }
 
   
-    #img2 img {
+    #img3 img {
        border-top-left-radius: 30px; 
        margin-bottom: 0; 
        height: auto; 
@@ -217,7 +260,7 @@ h1{
     #wrapper_2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh auto 75vh auto 75vh auto 75vh auto 80vh 10vh;
+        grid-template-rows: 10vh auto 75vh auto 75vh auto 75vh auto 80vh 40vh;
         grid-template-areas: 
         'hd hd hd'
         'c1 c1 c1'
@@ -239,7 +282,7 @@ h1{
     #wrapper_3{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh 100vh 10vh;
+        grid-template-rows: 10vh 100vh 40vh;
         grid-template-areas: 
         'hd hd hd'
         'sf f1 f1'
@@ -324,6 +367,11 @@ h1{
 /* Start på fösta sidan mobil */
 
 @media screen and (max-width: 500px) {
+
+ 
+    footer {
+        font-size: small;
+    }
 
     .container {
         display: inline-block;
