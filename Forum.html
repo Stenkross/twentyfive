@@ -38,29 +38,37 @@
         <a href="Forum.html" class="active"><i class="fas fa-comments"></i> Förslag</a>
       </nav>
 
-      <img id="img-logga" src="img/Logga.png" alt="">
+      <img id="img-logga" src="img/Logga.png" alt="Logga">
 
     </header>
       <div id="sc1_f">
         <h2>Välkommen till vårt forum!</h2>
-        <p>Här kan du dela med dig av dina bästa utflyktsmål och hjälpa andra att hitta nya spännande platser. Ladda upp bilder, beskriv platser och ge tips för en bättre upplevelse!</p>
+        <p class="phone">Här kan du dela med dig av dina bästa utflyktsmål och hjälpa andra att hitta nya spännande platser. Ladda upp bilder, beskriv platser och ge tips för en bättre upplevelse!
+        </p>
+        <p class="desktop">Här är platsen där vi samlar och delar våra bästa utflyktstips! Oavsett om du letar efter en ny vandringsled, ett mysigt kafé, en spännande aktivitet eller en undangömd pärla, så är detta forumet för dig.
+          <br><br>
+          Vi vill skapa en plats där alla kan bidra med sina erfarenheter och idéer för att inspirera fler att upptäcka nya platser. Har du en favoritutflykt att rekommendera? Eller kanske förslag på hur vi kan förbättra hemsidan? Dela gärna med dig!
+          <br><br>
+          Tillsammans gör vi det enklare för fler att hitta nya äventyr och upplevelser. Börja utforska och bidra till gemenskapen redan idag!
+          </p>
+          <img id="letter" class="desktop" src="img/Brev.jpg" alt="bild på ett brev">
       </div>
 
       <div id="sc2_f">
         <form>
           <div id="names">
-              <input type="text" id="namn" placeholder="Ditt namn*" required>
-              <input type="text" id="efternamn" placeholder="Ditt efternamn">
+            <input type="text" id="namn" placeholder="Ditt namn*" required>
+            <input type="text" id="efternamn" placeholder="Ditt efternamn">
           </div>
           <div id="Con">
-              <input type="tel" id="telefonnummer" placeholder="Telefonnummer">
-              <input type="email" id="email" placeholder="Email*" required>
+            <input type="tel" id="telefonnummer" placeholder="Telefonnummer">
+            <input type="email" id="email" placeholder="Email*" required>
           </div>
           <div id="text">
             <textarea name="massage" placeholder="Beskriv platsen...*" rows="5" required></textarea>
           </div>
-          <div id="pic">
-            <input type="file" multiple >
+          <div>
+            <input type="file" id="file">
           </div>
         
           <button type="submit">Lämna in</button>
