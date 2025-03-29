@@ -111,7 +111,7 @@ h1{
         'ft ft';
         margin: 0 0px;
     }
-    
+    /* Start på tredje sidan dator */
     footer {
         grid-area: ft;
         background-color: #AAAE7F;
@@ -156,6 +156,7 @@ h1{
         transform: translateX(-50%);
         position: absolute;  
     }
+    
     #footer_follow i{
       font-size: 1.5rem; 
     }
@@ -163,9 +164,7 @@ h1{
     #footer_email{
         padding-left: 50px;
         padding-right: 100px;
-    }
-
-
+    } 
 
     header {
         grid-area: hd;
@@ -367,10 +366,52 @@ h1{
 /* Start på fösta sidan mobil */
 
 @media screen and (max-width: 500px) {
+    footer{
+        font-size: medium;
+    }
 
- 
-    footer {
-        font-size: small;
+    footer.phone p {
+        text-align: center;
+    }
+    
+    #footer_text_p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer_contain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #footer_follow_p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer_follow_p a {
+        margin: 5px;
+        font-size: 1.8rem;
+    }
+
+    #footer_email_p {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #footer_cont_p {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #footer_cont_p p {
+      margin-top: -8px;
     }
 
     .container {
@@ -446,7 +487,7 @@ h1{
     #wrapper_1{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh 60vh 35vh auto 42vh 10vh;
+        grid-template-rows: 10vh 60vh 35vh auto 42vh 75vh;
         grid-template-areas: 
         'hd hd hd'
         'b1 b1 b1'
@@ -513,7 +554,7 @@ h1{
     #wrapper_2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh auto 75vh auto 75vh auto 75vh auto 80vh 10vh;
+        grid-template-rows: 10vh auto 75vh auto 75vh auto 75vh auto 80vh 75vh;
         grid-template-areas: 
         'hd hd hd'
         'c1 c1 c1'
@@ -644,7 +685,7 @@ h1{
     #wrapper_3{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh 35vh 110vh 10vh;
+        grid-template-rows: 10vh 35vh 110vh 75vh;
         grid-template-areas: 
         'hd hd hd'
         'sf sf sf'
