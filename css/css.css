@@ -585,18 +585,12 @@ h1{
         grid-area: b1;
         position: relative;
         overflow: hidden;
-        background-image: url(../img/Adobe\ Express\ -\ file\ \(1\).jpg);
+        background-image: url(../img/Index_1.jpg);
         background-size: cover; 
         background-repeat: no-repeat;
         background-position: center center;        
     }
-  
-    #img1 img {
-        width: 100%;
-        height: auto;
-        display: block;
-        
-    }
+
 
     #img2 {
         padding: 20px;
@@ -604,7 +598,6 @@ h1{
         overflow: hidden;
         box-sizing: border-box;
     }
-
   
     #img2 img {
        border-radius: 10px;   
