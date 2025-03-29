@@ -259,22 +259,84 @@ h1{
     #wrapper_2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh auto 75vh auto 75vh auto 75vh auto 80vh 40vh;
+        grid-template-rows: 10vh 10vh auto 10vh auto 10vh auto 10vh auto 10vh 40vh;
         grid-template-areas: 
         'hd hd hd'
-        'c1 c1 c1'
-        'u1 u1 u1'
-        'c2 c2 c2'
-        'u2 u2 u2'
-        'c3 c3 c3'
-        'u3 u3 u3'
-        'c4 c4 c4'
-        'u4 u4 u4'
+        '.. .. ..'
+        't1 p1 p1'
+        '.. .. ..'
+        'p2 p2 t2'
+        '.. .. ..'
+        't3 p3 p3'
+        '.. .. ..'
+        'p4 p4 t4' 
+        '.. .. ..'
         'ft ft ft';
         margin: 0 0px;
     }
 
+    #text_u{
+        grid-area: tx;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
 
+    #txt_1_d{
+        grid-area: t1;
+        padding-left: 60px;
+    }
+
+    #txt_2_d{
+        grid-area: t2; 
+        padding-right: 15px;
+    }
+
+    #txt_3_d{
+        grid-area: t3;
+        padding-left: 60px;
+        
+    }
+
+    #txt_4_d{
+        grid-area: t4;
+        padding-right: 15px;
+    }
+
+    #pic_1_d img, #pic_2_d img, #pic_3_d img, #pic_4_d img{
+        border-radius: 10px; 
+        height: auto; 
+        width: 100%;
+        border: #333 1px solid;
+    }
+
+    #pic_1_d{
+        grid-area: p1;
+        box-sizing: border-box;
+        margin-left: 150px;
+        margin-right: 50px;
+    }
+
+    #pic_2_d{
+        grid-area: p2;
+        box-sizing: border-box;
+        margin-left: 50px;
+        margin-right: 150px;
+    }
+
+    #pic_3_d{
+        grid-area: p3;
+        box-sizing: border-box;
+        margin-left: 150px;
+        margin-right: 50px;
+    
+    }
+
+    #pic_4_d{
+        grid-area: p4;
+        box-sizing: border-box;
+        margin-left: 50px;
+        margin-right: 150px;
+    }
 
 /* Start på tredje sidan dator */
 
@@ -707,5 +769,4 @@ h1{
         font-family: Poppins;
         padding: 0px;
     }
-
 }
